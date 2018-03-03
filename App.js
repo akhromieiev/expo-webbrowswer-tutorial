@@ -8,7 +8,6 @@ export default class App extends React.Component {
         if (!url) throw 'MISSED_PARAMS';
 
         let result = await WebBrowser.openBrowserAsync(url);
-        this.setState({result});
     };
 
     render() {
